@@ -1,0 +1,283 @@
+h2, h3, h4, h5, h6{
+    font-family: 'Alkatra', sans-serif;
+    letter-spacing: 2px;
+}
+
+p, figcaption, pre, li, a{
+    font-family: 'mooli', sans-serif;
+    font-size: 20px;
+    color: #f4f4f4;
+}
+
+li, a {
+    font-family: 'crete round', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;  /*scroll down smoothly*/
+}
+
+
+body{
+    margin: 5px;
+    background-image: url("../img/profile pic.jpg");
+    background-repeat: repeat;
+}
+
+header{
+    background-color: #0e0e0e;
+    display: flex;
+    align-items: center;
+    height: 125px;
+    padding: 0px 25px;
+}
+
+header div{
+    height: 115px;
+    width: auto;
+    flex-grow:1;
+}
+
+header img {
+    height: 100%;
+    width: auto;
+}
+
+header nav menu{
+    margin-bottom: 0px;
+    display: flex;
+    list-style: none;
+}
+header nav menu li{
+    padding: 0px 10px;
+}
+
+header nav menu li a{
+    text-decoration: none;
+    color: #fbe482;
+    font-size: 2.1em;
+}
+
+menu li a:hover{
+    color: #8d1515;
+}
+
+#lyrics-background {
+    margin: 0em 20em;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+
+
+/* Custom fonts */
+@font-face {
+    font-family: titlefont;
+    src:url("../font/Beauty Mountains Personal Use 400.ttf");
+}
+
+.song-title h1{
+    font-family: titlefont;
+    color: #FF0000;
+    font-size: 5.5em;
+    text-decoration: underline;
+    text-shadow: 4px 4px 4px #8d1515;
+}
+
+.song-title p{
+    font-size: 3em;
+    color: #fbe482;
+    font-family: 'Lobster', sans-serif;
+}
+
+.song-title {
+    line-height: 0.5;
+}
+
+.happy{
+    padding: 10px;
+    line-height: 0.5;
+    background-color: #072D67;
+
+}
+
+.happy h4{
+    color: #ffd700;
+    font-size: 20px;
+    animation: bounce 1s infinite;
+}
+.happy h4:first-of-type::first-letter{
+    font-size: 1.8em;
+}
+
+.happy h5{
+    animation: bounce 1s infinite;
+    font-size: 23px;
+    color: #fff9d8;
+}
+/* This part shows the gradually amplified feeling of happiness */
+
+.yeah {
+    font-size: 30px;
+    color: #fff3b2;
+
+}
+
+.yeah2 {
+    font-size: 36px;
+    color: #ffe766;
+
+}
+.yeah3 {
+    font-size: 42px;
+    color: #ffdf32;
+}
+
+.yeah4 {
+    font-size: 48px;
+    color: #ffd700;
+}
+
+
+
+
+.plain {
+    background: linear-gradient(to bottom, #f9a825, #fbca7c);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.plain p {
+    color: #072D67;
+    line-height: 1;
+    font-weight: bold;
+}
+
+
+.high{
+    background-color: #8d1515;
+    padding: 10px;
+}
+
+.high p{
+    font-weight: bold;
+    color: #FFD700;
+}
+
+
+
+
+.get-higher {
+    background-color: #FFD700;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.get-higher p {
+    color: #ff5700;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+
+.get-higher p:hover {
+    color: #FF0000;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* This part shows extreme happiness */
+
+#highest div:first-child {
+    background-color: #072D67;
+    padding: 10px;
+}
+
+#highest div:first-child p {
+    font-size: 25px;
+    color: #f4f4f4;
+    line-height: 36px;
+    animation: zoom 0.5s ease infinite;
+}
+
+
+
+#highest div:last-child {
+    background-color: #8d1515;
+    padding: 10px;
+    font-size: 24px;
+    text-shadow: 3px 3px 3px #0e0e0e;
+    color:#FFD700 ;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: shake 0.5s ease infinite;
+}
+
+
+
+/*All Animation functions*/
+
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes zoom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
